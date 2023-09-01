@@ -1,5 +1,4 @@
 from RPLCD.i2c import CharLCD
-import sys
 
 # Initialize the LCD
 lcd = CharLCD('PCF8574', 0x27, cols=16, rows=2)
