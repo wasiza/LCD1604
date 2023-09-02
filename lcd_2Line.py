@@ -1,7 +1,7 @@
 from RPLCD.i2c import CharLCD
 
 # Initialize the LCD
-lcd = CharLCD('PCF8574', 0x27, cols=16, rows=2)
+lcd = CharLCD('PCF8574', 0x27, cols=16, rows=2,)
 
 try:
     # Display "Hello" on the first line
