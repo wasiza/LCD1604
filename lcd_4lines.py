@@ -1,7 +1,7 @@
 from RPLCD.i2c import CharLCD
 
 # Initialize the LCD
-lcd = CharLCD('PCF8574', 0x27, cols=20, rows=4,)  # Change 'cols' to 20 and 'rows' to 4 for a 4-line LCD
+lcd = CharLCD('PCF8574', 0x27, cols=20, rows=4, lcd.backlight_enabled = True)  # Change 'cols' to 20 and 'rows' to 4 for a 4-line LCD
 
 try:
     # Display "Hello" on the first line
@@ -32,3 +32,4 @@ finally:
     # Clear the display and close the LCD
     lcd.clear()
     lcd.close()
+    lcd.backlight_enabled = False
