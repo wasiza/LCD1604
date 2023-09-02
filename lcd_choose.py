@@ -16,10 +16,12 @@ try:
         if user_input == '1':
             lcd.clear()
             lcd.write_string("Go the beach")
+            print("Go the beach")
             time.sleep(2)
         elif user_input == '2':
             lcd.clear()
             lcd.write_string("Fine stay @ home")
+            print("Fine stay at home")
             time.sleep(2)
         else:
             lcd.clear()
@@ -32,3 +34,4 @@ except KeyboardInterrupt:
 finally:
     lcd.backlight_enabled = False
     lcd.close()
+    lcd.clear()
